@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'circuits',
     'constructorresults',
     'constructorstandings',
+    'driverstandings',
+    'laptimes',
 ]
 
 MIDDLEWARE = [
