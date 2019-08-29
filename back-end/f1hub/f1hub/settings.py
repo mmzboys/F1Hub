@@ -45,6 +45,12 @@ INSTALLED_APPS = [
     'status',
     'circuits',
     'constructorresults',
+    'constructorstandings',
+    'driverstandings',
+    'laptimes',
+    'pitstops',
+    'qualifying',
+    'seasons',
 ]
 
 MIDDLEWARE = [
