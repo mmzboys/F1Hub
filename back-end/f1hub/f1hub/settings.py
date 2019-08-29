@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'status',
     'circuits',
     'constructorresults',
+    'constructorstandings',
 ]
 
 MIDDLEWARE = [

@@ -7,10 +7,11 @@ import races.schema
 import status.schema
 import circuits.schema
 import constructorresults.schema
+import constructorstandings.schema
 
 
 class Query(drivers.schema.Query, results.schema.Query, constructors.schema.Query, races.schema.Query, status.schema.Query, circuits.schema.Query,\
-    constructorresults.schema.Query, graphene.ObjectType):
+    constructorresults.schema.Query, constructorstandings.schema.Query, graphene.ObjectType):
     pass
 
 
