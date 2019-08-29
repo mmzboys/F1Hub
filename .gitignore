@@ -1,0 +1,4 @@
+# żebym nam teraz nie przerzucało plików na mastera jak będziemy dockera instalować
+
+/front-end
+/back-end
