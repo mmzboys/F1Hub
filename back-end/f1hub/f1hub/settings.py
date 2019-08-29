@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'constructorstandings',
     'driverstandings',
     'laptimes',
+    'pitstops',
+    'qualifying',
 ]
 
 MIDDLEWARE = [
