@@ -1,4 +1,19 @@
-# żebym nam teraz nie przerzucało plików na mastera jak będziemy dockera instalować
+### FRONT
 
-/front-end
-/back-end
+# dependencies
+/front-end/node_modules
+
+# testing
+/front-end/coverage
+
+# production
+/front-end/build
+/front-end/dist
+/front-end/.next
+
+# misc
+/front-end.DS_Store
+/front-end.env
+/front-endnpm-debug.log*
+/front-endyarn-debug.log*
+/front-endyarn-error.log*
