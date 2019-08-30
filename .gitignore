@@ -1,4 +1,11 @@
-# żebym nam teraz nie przerzucało plików na mastera jak będziemy dockera instalować
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-/front-end
-/back-end
+# BACK
+
+# dependencies
+back-end/venv
+
+#MISC
+back-end/f1hub/*/__pycache__
+back-end/f1hub/*/migrations
+
