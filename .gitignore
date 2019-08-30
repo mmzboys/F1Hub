@@ -1,3 +1,14 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+### BACK
+
+# dependencies
+back-end/venv
+
+#MISC
+back-end/f1hub/*/__pycache__
+back-end/f1hub/*/migrations
+
 ### FRONT
 
 # dependencies
@@ -17,3 +28,4 @@
 /front-endnpm-debug.log*
 /front-endyarn-debug.log*
 /front-endyarn-error.log*
+
