@@ -8,7 +8,8 @@ back-end/venv
 #MISC
 back-end/f1hub/*/__pycache__
 back-end/f1hub/*/migrations
-<<<<<<< Updated upstream
+back-end/.vscode
+
 
 ### FRONT
 
@@ -30,6 +31,5 @@ back-end/f1hub/*/migrations
 /front-endyarn-debug.log*
 /front-endyarn-error.log*
 
-=======
-back-end/.vscode
->>>>>>> Stashed changes
+
+

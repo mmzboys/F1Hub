@@ -25,7 +25,7 @@ SECRET_KEY = '+gvh!0(e7hv$7w+vh2*9&0bb5a(#!^&rv9j)1(_f%5mi^vc@ug'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://young-stream-34543.herokuapp.com/', '127.0.0.1', '0.0.0.0']
 
 
 # Application definition
@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'pitstops',
     'qualifying',
     'seasons',
+	'gunicorn',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,7 @@ STATIC_URL = '/static/'
 GRAPHENE = {
     'SCHEMA': 'f1hub.schema.schema',
 }
+
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
