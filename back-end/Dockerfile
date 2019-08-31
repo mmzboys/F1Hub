@@ -10,4 +10,4 @@ COPY . /f1hub
 
 EXPOSE $PORT
 
-CMD ['python', 'f1hub/manage.py', 'runserver', '0.0.0.0:$PORT']
+CMD gunicorn --bind 0.0.0.0:$PORT f1hub.f1hub.wsgi:application
