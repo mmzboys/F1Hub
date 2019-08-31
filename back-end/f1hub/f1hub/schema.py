@@ -1,23 +1,23 @@
 import graphene
 
-import drivers.schema
-import results.schema
-import constructors.schema
-import races.schema
-import status.schema
-import circuits.schema
-import constructorresults.schema
-import constructorstandings.schema
-import driverstandings.schema
-import laptimes.schema
-import pitstops.schema
-import qualifying.schema
-import seasons.schema
+import f1hub.drivers.schema
+import f1hub.results.schema
+import f1hub.constructors.schema
+import f1hub.races.schema
+import f1hub.status.schema
+import f1hub.circuits.schema
+import f1hub.constructorresults.schema
+import f1hub.constructorstandings.schema
+import f1hub.driverstandings.schema
+import f1hub.laptimes.schema
+import f1hub.pitstops.schema
+import f1hub.qualifying.schema
+import f1hub.seasons.schema
 
 
-class Query(drivers.schema.Query, results.schema.Query, constructors.schema.Query, races.schema.Query, status.schema.Query, circuits.schema.Query,\
-    constructorresults.schema.Query, constructorstandings.schema.Query, driverstandings.schema.Query, laptimes.schema.Query, pitstops.schema.Query,\
-    qualifying.schema.Query, seasons.schema.Query, graphene.ObjectType):
+class Query(f1hub.drivers.schema.Query, f1hub.results.schema.Query, f1hub.constructors.schema.Query, f1hub.races.schema.Query, f1hub.status.schema.Query, f1hub.circuits.schema.Query,\
+    f1hub.constructorresults.schema.Query, f1hub.constructorstandings.schema.Query, f1hub.driverstandings.schema.Query, f1hub.laptimes.schema.Query, f1hub.pitstops.schema.Query,\
+    f1hub.qualifying.schema.Query, f1hub.seasons.schema.Query, graphene.ObjectType):
     pass
 
 

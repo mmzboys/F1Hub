@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+gvh!0(e7hv$7w+vh2*9&0bb5a(#!^&rv9j)1(_f%5mi^vc@ug'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['safe-bayou-28242.herokuapp.com']
 
 
 # Application definition
@@ -38,19 +38,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
-    'drivers',
-    'results',
-    'constructors',
-    'races',
-    'status',
-    'circuits',
-    'constructorresults',
-    'constructorstandings',
-    'driverstandings',
-    'laptimes',
-    'pitstops',
-    'qualifying',
-    'seasons',
+    'f1hub.drivers',
+    'f1hub.results',
+    'f1hub.constructors',
+    'f1hub.races',
+    'f1hub.status',
+    'f1hub.circuits',
+    'f1hub.constructorresults',
+    'f1hub.constructorstandings',
+    'f1hub.driverstandings',
+    'f1hub.laptimes',
+    'f1hub.pitstops',
+    'f1hub.qualifying',
+    'f1hub.seasons',
+    'gunicorn',
 ]
 
 MIDDLEWARE = [
@@ -63,7 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'f1hub.urls'
+ROOT_URLCONF = 'f1hub.f1hub.urls'
 
 TEMPLATES = [
     {
@@ -134,5 +135,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 GRAPHENE = {
-    'SCHEMA': 'f1hub.schema.schema',
+    'SCHEMA': 'f1hub.f1hub.schema.schema',
 }
+
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
