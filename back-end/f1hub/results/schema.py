@@ -12,7 +12,7 @@ class ResultType(DjangoObjectType):
 class Query(graphene.ObjectType):
     results = graphene.List(ResultType, raceId=graphene.Int(), constructor=graphene.String(), year=graphene.Int(), round=graphene.Int(), driver = graphene.String())
 
-    def resolve_results(self, info, raceId=None, constructor=None, year=2019, round=None, driver=None,**kwargs):
+    def resolve_results(self, info, raceId=None, constructor=None, year=None, round=None, driver=None,**kwargs):
         data = Result.objects.all()
         if raceId:
             data = data.filter(raceId=raceId)       
