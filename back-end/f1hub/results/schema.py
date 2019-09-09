@@ -23,6 +23,6 @@ class Query(graphene.ObjectType):
         if round:
             data = data.filter(raceId_id__round=round)
         if driver:
-            data = data.filter(driverId_id__driverRef__icontaints=driver)
+            data = data.filter(driverId_id__driverRef__icontains=driver)
 
         return data
